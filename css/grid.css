@@ -1,6 +1,6 @@
 /*
   Gridifier || Code released under the UNLICENSE
-  https://gridifier.web-dev.tools/#xs,4,0,0,0;s,4,25,0,0;m,4,38,1,1;l,4,60,1,1
+  https://gridifier.web-dev.tools/#xs,2,0,0,0;s,2,25,0,0;m,2,38,1,1
 */
 
 .grid {
@@ -92,26 +92,12 @@
   width: 66.6667%;
 }
 
-.unit-xs-1-4,
-.xs-1-4 {
-  width: 25%;
-}
-
-.unit-xs-3-4,
-.xs-3-4 {
-  width: 75%;
-}
-
 .unit-xs-1-2,
 .xs-1-2,
 .unit-xs-1-3,
 .xs-1-3,
 .unit-xs-2-3,
-.xs-2-3,
-.unit-xs-1-4,
-.xs-1-4,
-.unit-xs-3-4,
-.xs-3-4 {
+.xs-2-3 {
   display: inline-block;
   visibility: visible;
 }
@@ -149,26 +135,12 @@
     width: 66.6667%;
   }
 
-  .unit-s-1-4,
-  .s-1-4 {
-    width: 25%;
-  }
-
-  .unit-s-3-4,
-  .s-3-4 {
-    width: 75%;
-  }
-
   .unit-s-1-2,
   .s-1-2,
   .unit-s-1-3,
   .s-1-3,
   .unit-s-2-3,
-  .s-2-3,
-  .unit-s-1-4,
-  .s-1-4,
-  .unit-s-3-4,
-  .s-3-4 {
+  .s-2-3 {
     display: inline-block;
     visibility: visible;
   }
@@ -251,4 +223,43 @@
 
   .unit-pull-m-2-3 {
     left: -66.6667%;
+  }
+
+  .unit-m-1-2,
+  .m-1-2,
+  .unit-m-1-3,
+  .m-1-3,
+  .unit-m-2-3,
+  .m-2-3 {
+    display: inline-block;
+    visibility: visible;
+  }
+
+}
+
+.unit-content-distribute,
+.content-distribute {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.content-fill,
+.content-stretch {
+  -ms-flex-grow: 2;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
+  max-width: 100%; /* @bugfix: IE 10, 11 */
+}
+
+.content-shrink {
+  -ms-align-self: center;
+  -webkit-align-self: center;
+  align-self: center;
 }
